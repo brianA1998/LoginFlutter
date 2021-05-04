@@ -19,6 +19,12 @@ class PrincipalPage extends StatelessWidget {
           })
         ],
       ),
+      body: Center(
+          child: Text("Principal Page",
+              style: TextStyle(
+                  fontSize: 14.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold))),
     );
   }
 }
