@@ -18,6 +18,16 @@ class HomePage extends StatelessWidget {
           SizedBox(
             height: 100,
           ),
+          Container(
+            child: SignInButtonBuilder(
+              icon: Icons.person_add,
+              backgroundColor: Colors.blueAccent,
+              text: 'Registration',
+              onPressed: () => Get.toNamed("/registration"),
+            ),
+            padding: const EdgeInsets.all(16),
+            alignment: Alignment.center,
+          ),
         ],
       ),
     );
