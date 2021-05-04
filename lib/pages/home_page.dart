@@ -28,6 +28,16 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             alignment: Alignment.center,
           ),
+          Container(
+            child: SignInButtonBuilder(
+              icon: Icons.verified_user,
+              backgroundColor: Colors.orange,
+              text: 'Sign In',
+              onPressed: () => Get.toNamed("/loginpage"),
+            ),
+            padding: const EdgeInsets.all(16),
+            alignment: Alignment.center,
+          ),
         ],
       ),
     );
