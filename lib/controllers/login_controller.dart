@@ -22,7 +22,7 @@ class LoginController extends GetxController {
       Get.snackbar('Hola', ' su ingreso ha sido exitoso');
       print("Ingreso bien");
       Future.delayed(Duration(seconds: 2), () {
-        Get.toNamed("/principal_page");
+        Get.toNamed("/principalpage");
       });
     } catch (e) {
       Get.snackbar('Fallo', 'No puede ingresar, revise',
@@ -67,7 +67,7 @@ class LoginController extends GetxController {
       Get.snackbar('Hola', 'Sign In ${user.uid} with Google');
       print('Ingreso bien');
       Future.delayed(Duration(seconds: 2), () {
-        Get.toNamed("/foodpage");
+        Get.toNamed("/principalpage");
       });
     } catch (e) {
       print(e);

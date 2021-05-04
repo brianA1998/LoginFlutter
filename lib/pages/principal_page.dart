@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:get/get.dart';
+import 'package:loginflutter/controllers/login_controller.dart';
 
 class PrincipalPage extends StatelessWidget {
-  //final controller = Get.put(LoginController());
+  final controller = Get.put(LoginController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +16,7 @@ class PrincipalPage extends StatelessWidget {
                 child: const Text("Sign Out"),
                 textColor: Theme.of(context).buttonColor,
                 onPressed: () async {
-                  //controller.signOut();
+                  controller.signOut();
                 });
           })
         ],
