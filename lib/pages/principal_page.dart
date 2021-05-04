@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:get/get.dart';
 
 class PrincipalPage extends StatelessWidget {
@@ -9,7 +10,7 @@ class PrincipalPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Principal Network"),
         actions: <Widget>[
-          Builder(builder: (BuilContext context) {
+          Builder(builder: (BuildContext context) {
             return FlatButton(
                 child: const Text("Sign Out"),
                 textColor: Theme.of(context).buttonColor,
