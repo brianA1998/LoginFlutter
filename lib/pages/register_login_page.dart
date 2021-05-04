@@ -40,6 +40,7 @@ class RegisterLoginPage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(top: 16.0),
                   alignment: Alignment.center,
+                  // ignore: deprecated_member_use
                   child: RaisedButton(
                     child: Text('Register'),
                     onPressed: () async {

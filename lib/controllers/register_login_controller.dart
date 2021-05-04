@@ -18,7 +18,7 @@ class LoginRegisterController extends GetxController {
   }
 
   // Example code for registration.
-  Future<void> register() async {
+  void register() async {
     final User user = (await _auth.createUserWithEmailAndPassword(
       email: emailController.text,
       password: passwordController.text,

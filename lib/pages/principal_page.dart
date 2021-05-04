@@ -12,6 +12,7 @@ class PrincipalPage extends StatelessWidget {
         title: Text("Principal Network"),
         actions: <Widget>[
           Builder(builder: (BuildContext context) {
+            // ignore: deprecated_member_use
             return FlatButton(
                 child: const Text("Sign Out"),
                 textColor: Theme.of(context).buttonColor,
